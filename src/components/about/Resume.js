@@ -3,27 +3,36 @@ const Resume = () => {
 	return (
 		<div className="resume">
 			<section className="resume-div">
-				<a href="https://drive.google.com/file/d/1iErNG4c6fiNptf1UN_bSkPtdJSUQAs9s/view?usp=sharing">
+				<a
+					href="https://drive.google.com/file/d/1iErNG4c6fiNptf1UN_bSkPtdJSUQAs9s/view?usp=sharing"
+					target="_blank"
+					rel="noreferrer"
+				>
 					<h3>Resume</h3>
 					<p>
 						I am currently an apprentice under ALX-Africa 12-month Software
 						Engineering bootcamp, where I collaborate with colleagues in order
 						to accomplish daily tasks. I am a great team player and always
 						available to help whenever I can, for the good of the common goal.
-						<p style={{ textDecoration: "underline" }}>Click to see details</p>
+						<br />
+						<b style={{ textDecoration: "underline" }}>Click to see details</b>
 					</p>
 				</a>
 			</section>
-			<section className="cover-letter">
-				<a href="https://docs.google.com/document/d/1fH7mV6G7ygKboIGYQzODU0BVXohR1B-c/edit?usp=sharing&ouid=102685088689711231763&rtpof=true&sd=true">
-					<h3>Cover Letter</h3>
+			<section className="blog-posts">
+				<a
+					href="https://kelvinofili.hashnode.dev/"
+					target="_blank"
+					rel="noreferrer"
+				>
+					<h3>Blog Posts</h3>
 					<p>
 						I am a results-oriented college student (3.76 GPA, BSc in Systems
 						Engineering) currently attending University of Lagos. While working
 						on academic and extracurricular projects, I have developed proven
-						technical, problem-solving and analytical skills, which I hope to
-						leverage into the Software Engineering role at your company. <br />
-						<p style={{ textDecoration: "underline" }}>Click to view full</p>
+						technical, problem-solving and analytical skills, which I have used
+						to write several unpublished articles on various programming concepts. <br />
+						<b style={{ textDecoration: "underline" }}>Click to check out</b>
 					</p>
 				</a>
 			</section>
@@ -36,7 +45,8 @@ const Resume = () => {
 						worked my way up from there. I am now conversant with a variety of
 						programming languages and frameworks, including JavaScript, React,
 						expressAPI, Python, C, and so on. Check out the complete list below.
-						<p style={{ textDecoration: "underline" }}>Click to see</p>
+						<br />
+						<b style={{ textDecoration: "underline" }}>Click to see</b>
 					</p>
 				</Link>
 			</section>

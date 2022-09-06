@@ -2,9 +2,8 @@ import React from "react";
 import certificates from "./Data";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Certification = () => {
 	AOS.init();
@@ -21,9 +20,14 @@ const Certification = () => {
 			<h1 className="certification-h1">My Certifications </h1>
 			<div className="certificates">
 				{certificates.map((cert) => (
-					<div key={cert.id} className="certificate" data-aos="fade-up" data-aos-duration="1000">
+					<div
+						key={cert.id}
+						className="certificate"
+						data-aos="fade-up"
+						data-aos-duration="1000"
+					>
 						<div className="certificate-image">
-							<a href={cert.companyLink}>
+							<a href={cert.companyLink} target="_blank" rel="noreferrer">
 								<img src={cert.image} alt="" />
 							</a>
 						</div>

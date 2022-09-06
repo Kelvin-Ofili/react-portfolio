@@ -2,8 +2,6 @@
 	background-color: #4b4a54;
 	height: 100%;
 	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 .container {
 	height: 100%;
@@ -14,30 +12,27 @@
 	color: white;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
+	justify-content: space-between;
 	text-align: center;
 	font-family: "Kanit";
 }
 .container .connect {
-	margin: 20px;
+	width: 90%;
 }
-.connect {
-	margin: 0px;
-}
+
 textarea {
 	line-height: 1.2em;
 	color: black;
 }
 .form {
-	width: 95%;
+	width: 90%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 .inputs {
 	display: flex;
-	justify-content: space-between;
 	margin: 20px 0px;
 	width: 100%;
 }
@@ -54,7 +49,7 @@ textarea {
 }
 .message {
 	margin: 20px 0px;
-	width: 100%;
+	width: 110%;
 }
 .message textarea {
 	width: 80%;
@@ -65,16 +60,16 @@ input {
 	color: black;
 }
 .contact-btn {
+	color: white;
+	background: rgba(108, 107, 107, 0.582);
+}
+.contact-btn:hover {
+	background: white;
 	color: black;
-	background-color: white;
-	border: transparent;
-	border-radius: 30px;
-	width: 100px;
-	transition: 0.5s;
 }
 
 .contact-btn:hover {
-	background-color: rgb(220, 191, 161);
+	background-color: rgb(5, 5, 5);
 	color: white;
 	transition: 0.5s;
 }
@@ -82,9 +77,8 @@ input {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 85%;
-	margin: auto;
-	padding-top: 25px;
+	width: 90%;
+	margin: 30px 0px;
 }
 .socials {
 	display: flex;
@@ -106,14 +100,12 @@ input {
 }
 @media (max-width: 880px) {
 	.socials {
-		/* margin-left: 15px; */
 		align-items: center;
 		width: 47%;
 	}
 }
 @media (max-width: 780px) {
 	.socials {
-		margin: 0px auto;
 		justify-content: center;
 	}
 }

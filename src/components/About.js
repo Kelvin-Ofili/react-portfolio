@@ -11,11 +11,11 @@ const About = () => {
 			transition={{ type: "spring", duration: 1, bounce: 0.3 }}
 		>
 			<div className="about-more-btn">
-				<Link to="/profile" className="btn">
-					Profile
-				</Link>
 				<Link to="/projects" className="btn">
 					Projects
+				</Link>
+				<Link to="/contact" className="btn">
+					Contact
 				</Link>
 			</div>
 			<h2 className="about-intro">
@@ -28,9 +28,6 @@ const About = () => {
 			<div className="about-more-btn">
 				<Link to="/" className="btn">
 					Home
-				</Link>
-				<Link to="/contact" className="btn">
-					Contact
 				</Link>
 			</div>
 		</motion.div>

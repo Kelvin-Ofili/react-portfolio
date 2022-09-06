@@ -27,6 +27,7 @@ const Career = () => {
 					<li className="language-list-item">={">"} Express API</li>
 					<li className="language-list-item">={">"} Python</li>
 					<li className="language-list-item">={">"} Figma</li>
+					<li className="language-list-item">={">"} NodeJs</li>
 				</ul>
 			</div>
 		</div>

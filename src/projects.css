@@ -1,7 +1,6 @@
 .projects {
 	background-color: #4b4a54;
 	align-items: center;
-	padding: 30px 0px;
 }
 .heading {
 	color: white;
@@ -53,9 +52,6 @@
 	transform: scale(1.05);
 	color: white;
 }
-.project-align:hover .github-link {
-	color: black;
-}
 
 .project-align h1 {
 	height: 12%;
@@ -75,7 +71,9 @@
 	color: black;
 	transition: 0.5s;
 }
-
+.github-link{
+	color: black;
+}
 .arrange {
 	display: flex;
 	height: 88%;
@@ -141,9 +139,9 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 85%;
+	width: 90%;
 	transition: 0.5s;
-	margin-bottom: 25px;
+	margin: 30px 0px;
 }
 
 .project-link {

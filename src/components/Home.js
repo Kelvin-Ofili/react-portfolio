@@ -1,6 +1,10 @@
 import Navigation from "./home/Navigation";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import Person from "./home/Person";
+import Intro from "./home/Intro";
+import Welcome from "./home/Welcome";
+import Lost from "./home/Lost";
 
 const Home = () => {
 	return (
@@ -11,22 +15,13 @@ const Home = () => {
 			exit={{ opacity: 0 }}
 		>
 			<Navigation />
-			<Link to='/' className="logo">
+			<Link to="/" className="logo">
 				Kelvin
 			</Link>
-			{/* <h1
-				style={{
-					zIndex: 200,
-					color: "white",
-					position: "absolute",
-					fontFamily: "Aclonica",
-					left: "18%",
-					top: "50%",
-				}}
-			>
-				Hi, I'm Kelvin ...
-				<p>This is just a brief intro to my porfolio. Navigate through, but try not to get lost</p>
-			</h1> */}
+			<Person />
+			<Intro />
+			<Welcome />
+			<Lost />
 		</motion.div>
 	);
 };

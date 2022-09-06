@@ -23,9 +23,6 @@ function Navigation() {
 			<Link to="/about" className="btn">
 				About
 			</Link>
-			<Link to="/profile" className="btn">
-				Profile
-			</Link>
 			<Link to="/projects" className="btn">
 				Projects
 			</Link>
@@ -39,9 +36,6 @@ function Navigation() {
 				<ul className="smaller-screen-ul">
 					<li className="smaller-list-items">
 						<Link to="/about">About</Link>
-					</li>
-					<li className="smaller-list-items">
-						<Link to="/profile">Profile</Link>
 					</li>
 					<li className="smaller-list-items">
 						<Link to="/projects">Projects</Link>

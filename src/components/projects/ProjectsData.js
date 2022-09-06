@@ -47,7 +47,7 @@ const projects = [
 		description:
 			"This is an E-commerce kind of App where users can potentially buy different products...",
 		tools: ["JavaScript", "Express API", "CSS"],
-		projectLink: "https://memes-generator-ofili.netlify.app/",
+		projectLink: "https://github.com/Kelvin-Ofili/Ecomm-Website.git",
 		githubLink: "https://github.com/Kelvin-Ofili/Ecomm-Website.git",
 		image: ecomms,
 		tap: false,

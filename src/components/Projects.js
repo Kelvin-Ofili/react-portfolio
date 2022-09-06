@@ -16,8 +16,8 @@ const Projects = ({ projectClicked, setProjectClicked }) => {
 					Contact
 				</Link>
 				<h1 className="heading">My Projects</h1>
-				<Link to="/" className="btn">
-					Home
+				<Link to="/about" className="btn">
+					About
 				</Link>
 			</div>
 
@@ -39,11 +39,8 @@ const Projects = ({ projectClicked, setProjectClicked }) => {
 				))}
 			</div>
 			<div className="project-more-btn pmb2">
-				<Link to="/profile" className="btn">
-					Profile
-				</Link>
-				<Link to="/about" className="btn">
-					About
+				<Link to="/" className="btn">
+					Home
 				</Link>
 			</div>
 		</motion.div>
