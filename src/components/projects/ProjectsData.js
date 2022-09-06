@@ -23,7 +23,7 @@ const projects = [
 		id: 2,
 		name: "Memes-Template",
 		description:
-			"This is the first React Project that I copied and I am currently trying to recreate it...",
+			"I built this web application to make it possible for users to flexibly generate their very own memes",
 		tools: ["ReactJS", "CSS", "HTML"],
 		projectLink: "https://memes-generator-ofili.netlify.app/",
 		githubLink: "https://github.com/Kelvin-Ofili/Memes-Template.git",
