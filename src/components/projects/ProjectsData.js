@@ -1,11 +1,8 @@
-
-
+import restaurantRecipe from "../../images/restaurant-recipe.png";
 import tenzi from "../../images/Tenzi.png";
 import memes from "../../images/memes-generator.png";
 import movieFight from "../../images/movie-fight.png";
 import ecomms from "../../images/ecomms.png";
-
-
 
 const projects = [
 	{
@@ -43,6 +40,17 @@ const projects = [
 	},
 	{
 		id: 4,
+		name: "Restaurant-Recipes",
+		description:
+			"This is a web app built with the spoonacular api aimed at providing users with important information about numerous dishes",
+		tools: ["ReactJS", "Spoonacular API", "CSS", "JSX"],
+		projectLink: "https://restaurant-recipes.netlify.app/",
+		githubLink: "https://github.com/Kelvin-Ofili/restaurant-recipes.git",
+		image: restaurantRecipe,
+		tap: false,
+	},
+	{
+		id: 5,
 		name: "Ecomms-Website",
 		description:
 			"This is an E-commerce kind of App where users can potentially buy different products...",
