@@ -3,10 +3,22 @@ import tenzi from "../../images/Tenzi.png";
 import memes from "../../images/memes-generator.png";
 import movieFight from "../../images/movie-fight.png";
 import ecomms from "../../images/ecomms.png";
+import musicPlayer from "../../images/musicPlayer.png"
 
 const projects = [
 	{
 		id: 1,
+		name: "Music-Player",
+		description:
+			"A music player web-application aimed at providing users snippets to their favorite songs...",
+		tools: ["ReactJS", "Redux", "Tailwind", "JavaScript"],
+		projectLink: "https://music-player-ofili.netlify.app/",
+		githubLink: "https://github.com/Kelvin-Ofili/music-player-react.git",
+		image: musicPlayer,
+		tap: false,
+	},
+	{
+		id: 2,
 		name: "Tenzi",
 		description:
 			"This is the popular family game with 10 players holding 10 dice to get all die to show the same number...",
@@ -17,7 +29,7 @@ const projects = [
 		tap: false,
 	},
 	{
-		id: 2,
+		id: 3,
 		name: "Memes-Template",
 		description:
 			"I built this web application to make it possible for users to flexibly generate their very own memes",
@@ -28,7 +40,7 @@ const projects = [
 		tap: false,
 	},
 	{
-		id: 3,
+		id: 4,
 		name: " Movie-Fight",
 		description:
 			"This is a fun Web App that I created using the Express Framework and the an API...",
@@ -39,7 +51,7 @@ const projects = [
 		tap: false,
 	},
 	{
-		id: 4,
+		id: 5,
 		name: "Restaurant-Recipes",
 		description:
 			"This is a web app built with the spoonacular api aimed at providing users with important information about numerous dishes",
@@ -50,7 +62,7 @@ const projects = [
 		tap: false,
 	},
 	{
-		id: 5,
+		id: 6,
 		name: "Ecomms-Website",
 		description:
 			"This is an E-commerce kind of App where users can potentially buy different products...",
