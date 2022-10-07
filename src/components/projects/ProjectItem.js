@@ -15,8 +15,6 @@ const ProjectItem = ({
 }) => {
 	AOS.init();
 	const [isClicked, setIsClicked] = useState(projectClicked === projectId);
-	// let isClicked = (projectClicked===projectId)
-	// let isClicked = false
 	return (
 		<section
 			className="project-item"
@@ -50,7 +48,7 @@ const ProjectItem = ({
 										setIsClicked(!isClicked);
 									}}
 								>
-									{projectClicked === projectId ? "show less" : "Tools Used"}
+									{projectClicked === projectId ? "Show Less" : "Tools Used"}
 								</button>
 							</p>
 							{isClicked ? (

@@ -4,6 +4,7 @@ import memes from "../../images/memes-generator.png";
 import movieFight from "../../images/movie-fight.png";
 import ecomms from "../../images/ecomms.png";
 import musicPlayer from "../../images/musicPlayer.png"
+import reduxEcommerce from "../../images/reduxEcommerce.png"
 
 const projects = [
 	{
@@ -63,9 +64,20 @@ const projects = [
 	},
 	{
 		id: 6,
+		name: "Redux-Ecommerce",
+		description:
+			"This is an E-commerce web application built with Redux and supported with a firebase backend",
+		tools: ["ReactJS", "Redux", "Material-ui", "Firebase"],
+		projectLink: "https://redux-ecommerce-ofili.netlify.app/",
+		githubLink: "https://github.com/Kelvin-Ofili/redux-ecommerce.git",
+		image: reduxEcommerce,
+		tap: false,
+	},
+	{
+		id: 7,
 		name: "Ecomms-Website",
 		description:
-			"This is an E-commerce kind of App where users can potentially buy different products...",
+			"This is an E-commerce Web App where users can potentially buy different products...",
 		tools: ["NodeJS", "Express API", "CSS"],
 		projectLink: "https://github.com/Kelvin-Ofili/Ecomm-Website.git",
 		githubLink: "https://github.com/Kelvin-Ofili/Ecomm-Website.git",
