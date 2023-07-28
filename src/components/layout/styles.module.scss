@@ -1,0 +1,37 @@
+.layout {
+	// min-height: 100vh;
+	height: 100vh;
+	display: flex;
+
+	&__sides {
+		width: 50%;
+		height: 100%;
+	}
+	&__blackSide {
+		background-color: var(--tech-color);
+	}
+	&__whiteSide {
+		background-color: white;
+	}
+}
+.glass {
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	background-color: rgba(189, 189, 189, 0.247);
+	background: linear-gradient(
+			rgba(255, 255, 255, 0.2),
+			rgba(255, 255, 255, 0.2)
+		),
+		linear-gradient(
+			to bottom right,
+			rgba(255, 255, 255, 0.2),
+			rgba(255, 255, 255, 0.1)
+		);
+
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(11px);
+	-webkit-backdrop-filter: blur(11px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	opacity: 0.8;
+}

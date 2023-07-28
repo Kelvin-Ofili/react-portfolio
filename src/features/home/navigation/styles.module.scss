@@ -1,0 +1,35 @@
+.navHome {
+	width: 40%;
+	display: flex;
+	justify-content: space-between;
+	margin: 20px auto;
+}
+.blackBtn {
+	color: white;
+	background: #646464;
+	&:hover {
+		color: white;
+		background-color: black;
+	}
+}
+.whiteBtn {
+	color: black;
+	background-color: white;
+	&:hover {
+		color: white;
+		background-color: black;
+	}
+}
+@media (max-width: 1150px) {
+	.navHome {
+		&__btn {
+			width: 15%;
+			font-size: 75%;
+		}
+	}
+}
+@media (max-width: 768px) {
+	.navHome {
+		display: none;
+	}
+}

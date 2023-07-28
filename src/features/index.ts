@@ -1,0 +1,5 @@
+export * from "./about"
+export * from "./home"
+export * from "./projects"
+export * from "./error"
+export * from "./certifications"

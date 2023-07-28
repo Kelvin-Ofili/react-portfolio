@@ -1,0 +1,177 @@
+.certificateContainer {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	width: 100%;
+	&__btn {
+		margin: 15px auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 90%;
+		transition: 0.5s;
+	}
+	> p {
+		font-size: 20px;
+		width: 500px;
+		margin: 120px auto 0px;
+	
+	}
+}
+.certificates {
+	margin: 40px 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.top {
+	position: fixed;
+}
+.bottom {
+	position: fixed;
+	bottom: 0px;
+}
+.certificate {
+	font-family: "Aclonica";
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border: 1px solid black;
+	padding: 0px 20px;
+	margin: 40px auto;
+	border-radius: 7px;
+	height: 130px;
+	width: 90%;
+	position: relative;
+	right: 1px;
+	bottom: 1px;
+	box-shadow: 1px 1px 0px #4b4a54;
+	transition: 0.5s;
+}
+.certificationH1 {
+	font-family: "Aclonica";
+	width: fit-content;
+	align-self: center;
+	text-align: center;
+	color: black;
+	z-index: 4;
+}
+.certificate:nth-child(odd) {
+	color: black;
+	background-color: white;
+	flex-direction: row;
+}
+.certificate:nth-child(even) {
+	color: white;
+	background-color: #c9c9c9;
+	flex-direction: row-reverse;
+	text-align: end;
+}
+.certificate:hover {
+	right: 0px;
+	bottom: 0px;
+	box-shadow: 0px 0px black;
+	transition: 0.5s;
+}
+.certificate:nth-child(odd) .certificateImage {
+	margin: 0px 14px 0px 0px;
+}
+.certificate:nth-child(even) .certificateImage {
+	margin: 0px 0px 0px 14px;
+}
+
+.certificateImage a img {
+	transform: scale(0.95);
+	transition: 0.5s;
+	border-radius: 10px;
+	width: 100px;
+	height: 100px;
+	border: 1px solid rgba(148, 147, 147, 0.281);
+}
+.certificateImage a img:hover {
+	transform: scale(1);
+	transition: 0.5s;
+}
+.certificate:hover .credential-btn {
+	transform: scale(1);
+	transition: 0.5s;
+}
+.certificate:hover .credential-btn:hover {
+	box-shadow: 0px 0px black;
+	position: relative;
+	bottom: -2px;
+	transition: 0.5s;
+}
+.certificate:nth-child(odd):hover .credential-btn {
+	box-shadow: -2px 2px 3px gray;
+}
+.certificate:nth-child(even):hover .credential-btn {
+	box-shadow: 2px 2px 3px black;
+}
+.certificate:nth-child(odd):hover .credential-btn:hover {
+	right: 2px;
+	box-shadow: 0px 0px black;
+}
+.certificate:nth-child(even):hover .credential-btn:hover {
+	right: -2px;
+	box-shadow: 0px 0px black;
+}
+.certificate:nth-child(odd) .credential-btn,
+.certificate:nth-child(even) .credential-btn:hover {
+	background-color: rgb(54, 54, 54);
+	color: white;
+}
+.certificate:nth-child(even) .credential-btn,
+.certificate:nth-child(odd) .credential-btn:hover {
+	background-color: white;
+	color: black;
+}
+.credential-btn {
+	border: none;
+	border-radius: 7px;
+	height: 25px;
+	width: 130px;
+	margin-top: 12px;
+	transition: 0.5s;
+	font-family: "Aclonica";
+	font-weight: 100;
+	transition: 0.5s;
+	transform: scale(0.9);
+}
+.credential-btn:hover {
+	transition: 0.5s;
+}
+.credential-link {
+	text-decoration: none;
+}
+@media (max-width: 640px) {
+	.certificate-details h3,
+	.certificate-details h4,
+	.certificate-details p {
+		font-size: 15px;
+		transition: 0.5s;
+	}
+}
+@media (max-width: 540px) {
+	.certificate-details h3,
+	.certificate-details h4,
+	.certificate-details p {
+		font-size: 13px;
+		transition: 0.5s;
+	}
+}
+@media (max-width: 480px) {
+	.certificate-details h3,
+	.certificate-details h4,
+	.certificate-details p {
+		font-size: 12px;
+		transition: 0.5s;
+	}
+}
+@media (max-width: 380px) {
+	.certificate-details h3,
+	.certificate-details h4,
+	.certificate-details p {
+		font-size: 10px;
+		transition: 0.5s;
+	}
+}

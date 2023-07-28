@@ -1,0 +1,30 @@
+.heading {
+	color: white;
+	background-image: linear-gradient(to right, white, rgb(153, 160, 160));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-family: "Aclonica";
+	text-align: center;
+}
+
+.projects {
+	&__btn {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 90%;
+		transition: 0.5s;
+		margin: auto;
+	}
+}
+.btn {
+	background-image: linear-gradient(to right, white, rgb(153, 160, 160));
+	color: black;
+	transition: 0.5s;
+	:hover {
+		background-image: linear-gradient(to right, grey, #4b4a54);
+		color: white;
+		box-shadow: 1px 1px 3px;
+		transition: 0.5s;
+	}
+}

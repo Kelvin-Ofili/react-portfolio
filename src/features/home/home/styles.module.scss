@@ -1,0 +1,46 @@
+.logo {
+	font-family: "aclonica";
+	position: absolute;
+	z-index: 3;
+	top: 22px;
+	font-size: 30px;
+	font-weight: 900;
+	left: 10px;
+	color: white;
+	text-decoration: none;
+}
+.content {
+	&__div {
+		position: absolute;
+		right: 30px;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: calc(2.5vw + 1vh);
+		font-family: "Aclonica";
+		&__left {
+			color: white;
+			margin-right: 15px;
+		}
+
+		&__right {
+			color: var(--tech-color);
+			margin-left: 15px;
+		}
+		&__left,
+		&__right {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}
+
+@media (max-width: 880px) {
+	.navHome {
+		display: flex;
+		justify-content: space-around;
+		width: 45%;
+	}
+}

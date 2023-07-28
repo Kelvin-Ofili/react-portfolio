@@ -1,0 +1,45 @@
+.career {
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: black;
+	&__summary {
+		width: 55%;
+		line-height: 1.1;
+		transform: scale(0.9);
+		transition: 1s;
+		:hover {
+			color: #fff3fa;
+			transform: scale(1);
+			transition: 1s;
+		}
+	}
+	&__languages {
+		width: 38%;
+		transform: scale(1);
+		transition: 1s;
+		:hover {
+			color: #fff3fa;
+			transform: scale(1.1);
+			transition: 1s;
+		}
+        &__languageList{
+            &__item{
+                list-style: none;
+            }
+        }
+	}
+}
+@media (max-width: 400px) {
+	.career {
+		flex-direction: column;
+	}
+	.careerSummary {
+		width: 90%;
+		margin-bottom: 20px;
+	}
+	.careerLanguages {
+		width: 90%;
+	}
+}
