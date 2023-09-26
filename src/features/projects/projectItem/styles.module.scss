@@ -161,3 +161,18 @@
 	display: flex;
 	flex-direction: column;
 }
+@media(max-width: 800px){
+	.projectItem{
+		&__projectAlign{
+			&__arrange{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				>div{
+					width: 100%;
+				}
+			}
+		}
+		margin-bottom: 120px;
+	}
+}
