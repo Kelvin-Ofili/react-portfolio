@@ -4,30 +4,30 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	:nth-child(even) .project-align h1,
-	:nth-child(odd) .project-align:hover h1 {
-		color: white;
-	}
-	:nth-child(odd) .project-align h1,
-	:nth-child(even) .project-align:hover h1 {
-		color: black;
-	}
-	:nth-child(odd) .project-align,
-	:nth-child(even) .project-align:hover {
-		background-image: linear-gradient(to right, white, rgb(153, 160, 160));
-		transition: 0.5s;
-	}
-	:nth-child(even) .project-align,
-	:nth-child(odd) .project-align:hover {
-		background-image: linear-gradient(to left, white, rgb(153, 160, 160));
-		transition: 0.5s;
-	}
-	:nth-child(odd) .arrange {
-		flex-direction: row;
-	}
-	:nth-child(even) .arrange {
-		flex-direction: row-reverse;
-	}
+	// :nth-child(even) .project-align h1,
+	// :nth-child(odd) .project-align:hover h1 {
+	// 	color: white;
+	// }
+	// :nth-child(odd) .project-align h1,
+	// :nth-child(even) .project-align:hover h1 {
+	// 	color: black;
+	// }
+	// :nth-child(odd) .project-align,
+	// :nth-child(even) .project-align:hover {
+	// 	background-image: linear-gradient(to right, white, rgb(153, 160, 160));
+	// 	transition: 0.5s;
+	// }
+	// :nth-child(even) .project-align,
+	// :nth-child(odd) .project-align:hover {
+	// 	background-image: linear-gradient(to left, white, rgb(153, 160, 160));
+	// 	transition: 0.5s;
+	// }
+	// :nth-child(odd) .arrange {
+	// 	flex-direction: row;
+	// }
+	// :nth-child(even) .arrange {
+	// 	flex-direction: row-reverse;
+	// }
 	&__projectAlign {
 		height: 80%;
 		width: 85%;
@@ -36,9 +36,10 @@
 		border-radius: var(--borderRadius-2);
 		:hover {
 			background-image: linear-gradient(to right, white, rgb(153, 160, 160));
+
 			transition: 0.5s;
 			transform: scale(1.05);
-			color: white;
+			color: black;
 			h1 {
 				transition: 0.5s;
 			}
@@ -114,8 +115,9 @@
 				&__projectBtn {
 					border-radius: 6px;
 					border: 1px;
-					width: 140px;
-					height: 25px;
+					width: fit-content;
+					height: fit-content;
+					padding: 10px;
 					background-color: #ffffff;
 					margin-top: 24px;
 					transition: 0.5s;
@@ -154,4 +156,8 @@
 .projectAlign .projectAlign .projectAlign .projectLink:hover {
 	box-shadow: 0px 0px 0px gray;
 	transition: all 0.2s 0.1s ease-in-out;
+}
+.column{
+	display: flex;
+	flex-direction: column;
 }
