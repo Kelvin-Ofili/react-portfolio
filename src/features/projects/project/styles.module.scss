@@ -43,15 +43,14 @@
 }
 
 .projects {
-	position: absolute;
-	top: 80px;
-	left: 0;
-	right: 0;
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	z-index: 2;
-	padding: 20px;
+	padding: 80px 20px 40px;
+	width: 100%;
+	min-height: 100vh;
 }
 
 .projectContainer {
@@ -61,11 +60,35 @@
 	max-width: 1400px;
 }
 
+@media(max-width: 1024px){
+	.heading {
+		font-size: 2.2rem;
+		margin: 25px 0;
+	}
+	.projects {
+		padding: 15px;
+	}
+}
+
 @media(max-width: 768px){
 	.logo{
 		display: none;
 	}
 	.navigation {
 		display: none;
+	}
+	.heading {
+		font-size: 2rem;
+		margin: 20px 0;
+	}
+	.projects {
+		padding: 10px;
+		top: 70px;
+	}
+}
+
+@media(max-width: 480px){
+	.heading {
+		font-size: 1.7rem;
 	}
 }

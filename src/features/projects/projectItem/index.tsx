@@ -27,7 +27,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
 	setProjectClicked,
 }) => {
 	AOS.init();
-	const [isClicked, setIsClicked] = useState(projectClicked === projectId);
+	const isClicked = projectClicked === projectId;
 	return (
 		<section
 			className={styles.projectItem}
@@ -77,8 +77,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
 										styles.projectItem__projectAlign__arrange__projectDescription__toolsBtn
 									}
 									onClick={() => {
-										setProjectClicked(projectId);
-										setIsClicked(!isClicked);
+										setProjectClicked(projectClicked === projectId ? -1 : projectId);
 									}}
 								>
 									{projectClicked === projectId ? "Show Less" : "Tools Used"}

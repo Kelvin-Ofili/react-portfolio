@@ -1,13 +1,88 @@
+.logo {
+	font-family: "aclonica";
+	position: fixed;
+	z-index: 1000;
+	top: 22px;
+	font-size: 30px;
+	font-weight: 900;
+	left: 10px;
+	color: white;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	&:hover {
+		color: #d50200;
+		transform: scale(1.05);
+	}
+}
+
+.navHome {
+	width: 40%;
+	display: flex;
+	justify-content: space-between;
+	margin: 20px auto;
+}
+
+.blackBtn {
+	color: white;
+	background: #646464;
+	&:hover {
+		color: white;
+		background-color: black;
+	}
+}
+
+.whiteBtn {
+	color: black;
+	background-color: white;
+	&:hover {
+		color: white;
+		background-color: black;
+	}
+}
+
+.phoneNavigation {
+	display: none;
+}
+
+.showNav {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	padding: 10px 5px;
+	background-color: black;
+	z-index: 2000;
+	nav {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		a {
+			text-decoration: none;
+			color: white;
+			font-family: "Bowlby One";
+			text-align: center;
+			margin: 15px 0px;
+		}
+	}
+}
+
 .layout {
 	min-height: 100vh;
 	height: 100%;
 	display: flex;
 	position: relative;
+	overflow-x: hidden;
 
 	&__sides {
 		width: 50%;
-		height: 100%;
+		height: 100vh;
+		min-height: 100vh;
 		position: fixed;
+		top: 0;
+		bottom: 0;
 	}
 	&__blackSide {
 		background-color: var(--tech-color);
@@ -16,6 +91,44 @@
 	&__whiteSide {
 		background-color: white;
 		right: 0;
+	}
+}
+
+@media (max-width: 1024px) {
+	.navHome {
+		width: 55%;
+		margin: 15px auto;
+	}
+	.glass {
+		padding: 5px 0;
+	}
+}
+
+@media (max-width: 880px) {
+	.navHome {
+		width: 70%;
+		flex-wrap: wrap;
+		gap: 10px;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 768px) {
+	.logo {
+		display: none;
+	}
+	.navHome {
+		display: none;
+	}
+	.phoneNavigation {
+		display: flex;
+		position: fixed;
+		top: 10px;
+		right: 10px;
+		z-index: 2000;
+		nav {
+			display: none;
+		}
 	}
 }
 .glass {

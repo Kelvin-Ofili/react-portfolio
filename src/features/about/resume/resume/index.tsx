@@ -11,10 +11,9 @@ const Resume = () => {
 				>
 					<h3>Resume</h3>
 					<p>
-						I am currently an apprentice under ALX-Africa 12-month Software
-						Engineering bootcamp, where I collaborate with colleagues in order
-						to accomplish daily tasks. I am a great team player and always
-						available to help whenever I can, for the good of the common goal.
+						I am a great team player and always available to help whenever I can, 
+						for the good of the common goal. I collaborate effectively with colleagues 
+						to accomplish tasks and deliver quality results.
 						<br />
 						<b style={{ textDecoration: "underline" }}>Click to see details</b>
 					</p>
@@ -28,12 +27,11 @@ const Resume = () => {
 				>
 					<h3>Blog Posts</h3>
 					<p>
-						I am a results-oriented college student (3.76 GPA, BSc in Systems
-						Engineering) currently attending University of Lagos. While working
-						on academic and extracurricular projects, I have developed proven
-						technical, problem-solving and analytical skills, which I have used
-						to write several unpublished articles on various programming
-						concepts. <br />
+						I am a results-oriented college student (BSc in Systems Engineering) 
+						currently attending University of Lagos. While working on academic and 
+						extracurricular projects, I have developed proven technical, problem-solving 
+						and analytical skills, which I have used to write several articles on various 
+						programming concepts. <br />
 						<b style={{ textDecoration: "underline" }}>Click to check out</b>
 					</p>
 				</a>

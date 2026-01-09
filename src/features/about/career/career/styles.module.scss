@@ -59,27 +59,83 @@
 	}
 }
 
+@media (max-width: 1024px) {
+	.career {
+		flex-direction: column;
+		gap: 25px;
+		width: 95%;
+		&__summary {
+			width: 100%;
+			padding: 25px;
+			h2 {
+				font-size: 1.6rem;
+			}
+			p {
+				font-size: 0.95rem;
+			}
+		}
+		&__languages {
+			width: 100%;
+			padding: 25px;
+			h5 {
+				font-size: 1rem;
+			}
+			&__languageList__item {
+				font-size: 1rem;
+			}
+		}
+	}
+}
+
 @media (max-width: 768px) {
 	.career {
 		flex-direction: column;
 		gap: 20px;
+		width: 98%;
 		&__summary {
 			width: 100%;
+			padding: 20px;
+			h2 {
+				font-size: 1.5rem;
+			}
+			p {
+				font-size: 0.9rem;
+			}
 		}
 		&__languages {
 			width: 100%;
+			padding: 20px;
+			h5 {
+				font-size: 0.95rem;
+			}
+			&__languageList__item {
+				font-size: 0.95rem;
+				padding: 6px 0;
+			}
 		}
 	}
 }
-@media (max-width: 400px) {
+
+@media (max-width: 480px) {
 	.career {
-		flex-direction: column;
-	}
-	.careerSummary {
-		width: 90%;
-		margin-bottom: 20px;
-	}
-	.careerLanguages {
-		width: 90%;
+		&__summary {
+			padding: 18px;
+			h2 {
+				font-size: 1.3rem;
+			}
+			p {
+				font-size: 0.85rem;
+				line-height: 1.5;
+			}
+		}
+		&__languages {
+			padding: 18px;
+			h5 {
+				font-size: 0.9rem;
+			}
+			&__languageList__item {
+				font-size: 0.9rem;
+			}
+		}
 	}
 }

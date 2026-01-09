@@ -1,3 +1,48 @@
+@media (max-width: 1024px) {
+	.resume {
+		width: 95%;
+		section {
+			padding: 30px 25px;
+		}
+		h3 {
+			font-size: 1.6rem !important;
+		}
+		p {
+			font-size: 0.95rem !important;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.resume {
+		width: 98%;
+		section {
+			padding: 25px 20px;
+		}
+		h3 {
+			font-size: 1.5rem !important;
+		}
+		p {
+			font-size: 0.9rem !important;
+			line-height: 1.5 !important;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.resume {
+		section {
+			padding: 20px 18px;
+		}
+		h3 {
+			font-size: 1.3rem !important;
+		}
+		p {
+			font-size: 0.85rem !important;
+		}
+	}
+}
+
 .resume {
 	border-radius: 20px;
 	margin-bottom: 40px;

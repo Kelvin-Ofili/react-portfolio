@@ -7,15 +7,6 @@ import styles from "./styles.module.scss";
 const ProjectUI = ({ projectClicked, setProjectClicked }) => {
 	return (
 		<LayoutUI>
-			<Link to="/" className={styles.logo}>
-				Kelvin
-			</Link>
-			<div className={styles.navigation}>
-				<Link to="/">Home</Link>
-				<Link to="/about">About</Link>
-				<Link to="/certifications">Certifications</Link>
-				<Link to="/contact">Contact</Link>
-			</div>
 			<div className={styles.projects}>
 				<h1 className={styles.heading}>My Projects</h1>
 			<div className={styles.projectContainer}>

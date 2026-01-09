@@ -6,7 +6,7 @@ import { LayoutUI } from "components/layout";
 
 const HomeUI = () => {
 	return (
-		<LayoutUI className={styles.content}>
+		<LayoutUI className={styles.content} hideLogo={true} hideNav={true}>
 			<Navigation />
 			<Link to="/" className={styles.logo}>
 				Kelvin

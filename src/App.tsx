@@ -1,8 +1,8 @@
 import React from "react";
-import { MainRouter } from "router";
+import { SinglePage } from "pages/SinglePage";
 
 const App = () => {
-	return <MainRouter />;
+	return <SinglePage />;
 };
 
 export default App;

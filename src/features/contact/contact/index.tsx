@@ -3,10 +3,15 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Socials } from "../socials";
 import { LayoutUI } from "components/layout";
+import { Toast } from "components";
 import styles from "./styles.module.scss";
 
 const ContactUI = () => {
 	const [input, setInput] = useState({ name: "", mail: "", textArea: "" });
+	const [showToast, setShowToast] = useState(false);
+	const [toastMessage, setToastMessage] = useState("");
+	const [toastType, setToastType] = useState<"success" | "error">("success");
+	
 	const sendEmail = (e) => {
 		e.preventDefault();
 		emailjs
@@ -18,23 +23,27 @@ const ContactUI = () => {
 			)
 			.then((res) => {
 				console.log(res);
+				setToastMessage("Message sent successfully! I'll get back to you soon.");
+				setToastType("success");
+				setShowToast(true);
+				setInput({ name: "", mail: "", textArea: "" });
 			})
 			.catch((err) => {
 				console.log(err);
+				setToastMessage("Failed to send message. Please try again.");
+				setToastType("error");
+				setShowToast(true);
 			});
-		setInput({ name: "", mail: "", textArea: "" });
 	};
 	return (
 		<LayoutUI>
-			<Link to="/" className={styles.logo}>
-				Kelvin
-			</Link>
-			<div className={styles.navigation}>
-				<Link to="/">Home</Link>
-				<Link to="/about">About</Link>
-				<Link to="/projects">Projects</Link>
-				<Link to="/certifications">Certifications</Link>
-			</div>
+			{showToast && (
+				<Toast
+					message={toastMessage}
+					type={toastType}
+					onClose={() => setShowToast(false)}
+				/>
+			)}
 			<div className={styles.container}>
 				<h1 className={styles.touch}>Get In Touch</h1>
 
@@ -48,10 +57,11 @@ const ContactUI = () => {
 					<div className={styles.contactName}>
 						<input
 							type="text"
-							name="name"
+							name="from_name"
 							placeholder="Full Name"
 							value={input.name}
 							onChange={(e) => setInput({ ...input, name: e.target.value })}
+							required
 						/>
 					</div>
 					<div className={styles.contactMail}>
@@ -61,16 +71,18 @@ const ContactUI = () => {
 							placeholder="Your Email"
 							value={input.mail}
 							onChange={(e) => setInput({ ...input, mail: e.target.value })}
+							required
 						/>
 					</div>
 				</div>
 				<div className={styles.message}>
 					<textarea
-						name="name"
+						name="message"
 						rows={4}
 						placeholder="Tell me what you need"
 						value={input.textArea}
 						onChange={(e) => setInput({ ...input, textArea: e.target.value })}
+						required
 					/>
 				</div>
 				<div className={styles.sendBtnDiv}>
