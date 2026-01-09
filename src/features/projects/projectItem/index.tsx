@@ -92,22 +92,24 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
 							) : (
 								""
 							)}
-							<button
-								className={
-									styles.projectItem__projectAlign__arrange__projectDescription__projectBtn
-								}
-							>
-								<a
-									href={githubLink}
-									target="_blank"
-									rel="noopener noreferrer"
+							{githubLink && (
+								<button
 									className={
-										styles.projectItem__projectAlign__arrange__projectDescription__projectBtn__githubLink
+										styles.projectItem__projectAlign__arrange__projectDescription__projectBtn
 									}
 								>
-									Go to GitHub's Repo
-								</a>
-							</button>
+									<a
+										href={githubLink}
+										target="_blank"
+										rel="noopener noreferrer"
+										className={
+											styles.projectItem__projectAlign__arrange__projectDescription__projectBtn__githubLink
+										}
+									>
+										Go to GitHub's Repo
+									</a>
+								</button>
+							)}
 						</div>
 					</div>
 				</div>

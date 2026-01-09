@@ -2,7 +2,7 @@ import styles from "./styles.module.scss"
 
 const Socials = () => {
 	return (
-		<div className="socials">
+		<div className={styles.socials}>
 			<p className={styles.withMe}>Connect With Me:</p>
 			<ul className={styles.socialIcon}>
 				<li>

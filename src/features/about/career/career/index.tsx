@@ -12,22 +12,6 @@ const Career = () => {
 					</b>
 				</p>
 			</div>
-
-			<div className={styles.career__languages}>
-				<h5>I am experienced with these languages, frameworks and tools;</h5>
-				<ul className={styles.career__languages__languageList}>
-					<li className={styles.career__languages__languageList__item}>={">"} JavaScript</li>
-					<li className={styles.career__languages__languageList__item}>={">"} ReactJS</li>
-					<li className={styles.career__languages__languageList__item}>={">"} C</li>
-					<li className={styles.career__languages__languageList__item}>={">"} Git</li>
-					<li className={styles.career__languages__languageList__item}>={">"} CSS</li>
-					<li className={styles.career__languages__languageList__item}>={">"} HTML</li>
-					<li className={styles.career__languages__languageList__item}>={">"} Express API</li>
-					<li className={styles.career__languages__languageList__item}>={">"} Python</li>
-					<li className={styles.career__languages__languageList__item}>={">"} Figma</li>
-					<li className={styles.career__languages__languageList__item}>={">"} NodeJs</li>
-				</ul>
-			</div>
 		</div>
 	);
 };

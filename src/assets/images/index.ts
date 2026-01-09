@@ -18,7 +18,8 @@ import RestaurantRecipe from "./restaurantRecipe.png";
 import Sololearn from "./sololearn.jpg";
 import Tenzi from "./tenzi.png";
 import CarQuery from "./carQuery.png";
-
+import GuidedHospitality from "./guidedHospitality.png";
+import SatinRides from "./satinRides.png";
 export {
 	AdvancedStyling,
 	Coursera,
@@ -40,4 +41,6 @@ export {
 	Sololearn,
 	Tenzi,
 	CarQuery,
+	GuidedHospitality,
+	SatinRides,
 };
