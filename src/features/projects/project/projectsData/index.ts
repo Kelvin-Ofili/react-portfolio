@@ -7,11 +7,22 @@ import {
 	ReduxEcommerce,
 	MusicPlayer,
 	Ecomms,
+	CarQuery,
 } from "assets";
 
 const projects = [
 	{
 		id: 1,
+		name: "Car-Genie",
+		description:
+			"An AI-powered car recommendation chatbot that helps users find their perfect vehicle match through intelligent conversation...",
+		tools: ["ReactJS", "TypeScript", "Gemini AI", "Tailwind CSS", "NodeJS", "Express API"],
+		projectLink: "https://car-genie-frontend.vercel.app/",
+		githubLink: "https://github.com/Kelvin-Ofili/car-genie-frontend.git",
+		image: CarQuery,
+	},
+	{
+		id: 2,
 		name: "Music-Player",
 		description:
 			"A music player web-application aimed at providing users snippets to their favorite songs...",
@@ -21,7 +32,7 @@ const projects = [
 		image: MusicPlayer,
 	},
 	{
-		id: 2,
+		id: 3,
 		name: "Tenzi",
 		description:
 			"This is the popular family game with 10 players holding 10 dice to get all die to show the same number...",
@@ -31,7 +42,7 @@ const projects = [
 		image: Tenzi,
 	},
 	{
-		id: 3,
+		id: 4,
 		name: "Memes-Template",
 		description:
 			"I built this web application to make it possible for users to flexibly generate their very own memes",
@@ -41,7 +52,7 @@ const projects = [
 		image: MemesGenerator,
 	},
 	{
-		id: 4,
+		id: 5,
 		name: "Movie-Search",
 		description:
 			"I utilised the imdbAPI in order to create a User Interface that allows users to search for movie and see results depending on their searches. I created this using ReactJS",
@@ -51,7 +62,7 @@ const projects = [
 		image: MovieSearch,
 	},
 	{
-		id: 5,
+		id: 6,
 		name: " Movie-Fight",
 		description:
 			"This is a fun Web App that I created using the Express Framework and the an API...",
@@ -61,7 +72,7 @@ const projects = [
 		image: MovieFight,
 	},
 	{
-		id: 6,
+		id: 7,
 		name: "Restaurant-Recipes",
 		description:
 			"This is a web app built with the spoonacular api aimed at providing users with important information about numerous dishes",
@@ -71,7 +82,7 @@ const projects = [
 		image: RestaurantRecipe,
 	},
 	{
-		id: 7,
+		id: 8,
 		name: "Redux-Ecommerce",
 		description:
 			"This is an E-commerce web application built with Redux and supported with a firebase backend",
@@ -81,7 +92,7 @@ const projects = [
 		image: ReduxEcommerce,
 	},
 	{
-		id: 8,
+		id: 9,
 		name: "Ecomms-Website",
 		description:
 			"This is an E-commerce Web App where users can potentially buy different products...",

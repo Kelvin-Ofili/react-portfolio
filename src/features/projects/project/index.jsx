@@ -1,30 +1,24 @@
 import { Link } from "react-router-dom";
 import { projects } from "./projectsData";
 import { ProjectItem } from "../projectItem";
-import styles from "./styles.module.scss"
+import { LayoutUI } from "components/layout";
+import styles from "./styles.module.scss";
+
 const ProjectUI = ({ projectClicked, setProjectClicked }) => {
 	return (
-		<div className={styles.projects}>
-			<div className={`${styles.projects__btn} ${styles.pmb1}`}>
-				<Link to="/" className={`btn`}>
-					Home
-				</Link>
+		<LayoutUI>
+			<Link to="/" className={styles.logo}>
+				Kelvin
+			</Link>
+			<div className={styles.navigation}>
+				<Link to="/">Home</Link>
+				<Link to="/about">About</Link>
+				<Link to="/certifications">Certifications</Link>
+				<Link to="/contact">Contact</Link>
+			</div>
+			<div className={styles.projects}>
 				<h1 className={styles.heading}>My Projects</h1>
-				<Link to="/about" className={`btn`}>
-					About
-				</Link>
-			</div>
-			<div>
-				<lottie-player
-					src="../../Assets/lotties/aboutUs.json"
-					background="transparent"
-					speed="1"
-					style={{ width: "auto", height: "100px" }}
-					loop
-					autoplay
-				></lottie-player>
-			</div>
-			<div className={`${styles.projectContainer} ${styles.column}`}>
+			<div className={styles.projectContainer}>
 				{projects.map((project) => (
 					<ProjectItem
 						key={project.id}
@@ -40,15 +34,8 @@ const ProjectUI = ({ projectClicked, setProjectClicked }) => {
 					/>
 				))}
 			</div>
-			<div className={`${styles.projects__btn} ${styles.pmb2}`}>
-				<Link to="/certifications" className={`btn`}>
-					Certificates
-				</Link>
-				<Link to="/contact" className={`btn`}>
-					Contact
-				</Link>
 			</div>
-		</div>
+		</LayoutUI>
 	);
 };
 

@@ -17,6 +17,7 @@ import ReduxEcommerce from "./reduxEcommerce.png";
 import RestaurantRecipe from "./restaurantRecipe.png";
 import Sololearn from "./sololearn.jpg";
 import Tenzi from "./tenzi.png";
+import CarQuery from "./carQuery.png";
 
 export {
 	AdvancedStyling,
@@ -38,4 +39,5 @@ export {
 	RestaurantRecipe,
 	Sololearn,
 	Tenzi,
+	CarQuery,
 };

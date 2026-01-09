@@ -2,23 +2,22 @@ import React from "react";
 import { certificates } from "./data";
 import { Link } from "react-router-dom";
 import styles from "./styles.module.scss";
-import { LayoutUI, GlassPanel } from "components";
+import { LayoutUI } from "components";
 
 const CertificationUI = () => {
 	return (
 		<LayoutUI>
+			<Link to="/" className={styles.logo}>
+				Kelvin
+			</Link>
+			<div className={styles.navigation}>
+				<Link to="/">Home</Link>
+				<Link to="/about">About</Link>
+				<Link to="/projects">Projects</Link>
+				<Link to="/contact">Contact</Link>
+			</div>
 			<div className={styles.certificateContainer}>
-				<GlassPanel className={styles.top}>
-					<div className={styles.certificateContainer__btn}>
-						<Link to="/" className={`btn`}>
-							Home
-						</Link>
-						<h1 className={styles.certificationH1}>My Certifications </h1>
-						<Link to="/contact" className={`btn`}>
-							Contact
-						</Link>
-					</div>
-				</GlassPanel>
+				<h1 className={styles.certificationH1}>My Certifications</h1>
 				<p>
 					I've worked with a variety of programming languages, frameworks,
 					libraries, packages, and tools for years. I began with HTML and worked
@@ -53,16 +52,6 @@ const CertificationUI = () => {
 						</div>
 					))}
 				</div>
-				<GlassPanel className={styles.bottom}>
-					<div className={styles.certificateContainer__btn}>
-						<Link to="/projects" className={`btn`}>
-							Projects{" "}
-						</Link>
-						<Link to="/about" className={`btn`}>
-							About
-						</Link>
-					</div>
-				</GlassPanel>
 			</div>
 		</LayoutUI>
 	);

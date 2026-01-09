@@ -1,9 +1,11 @@
 .projectItem {
-	height: 350px;
-	margin-bottom: 30px;
+	height: 400px;
+	margin-bottom: 60px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
+	z-index: 1;
 	// :nth-child(even) .project-align h1,
 	// :nth-child(odd) .project-align:hover h1 {
 	// 	color: white;
@@ -29,25 +31,37 @@
 	// 	flex-direction: row-reverse;
 	// }
 	&__projectAlign {
-		height: 80%;
-		width: 85%;
-		transition: 0.5s;
-		padding: 15px;
-		border-radius: var(--borderRadius-2);
+		height: 85%;
+		width: 90%;
+		max-width: 1200px;
+		transition: all 0.4s ease;
+		padding: 30px;
+		border-radius: 20px;
+		background: linear-gradient(135deg, rgba(134, 134, 134, 0.9) 0%, rgba(75, 74, 84, 0.9) 100%);
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+		border: 2px solid rgba(255, 255, 255, 0.3);
+		box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
 		:hover {
-			background-image: linear-gradient(to right, white, rgb(153, 160, 160));
-
-			transition: 0.5s;
-			transform: scale(1.05);
-			color: black;
-			h1 {
-				transition: 0.5s;
-			}
+			background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(245, 245, 245, 0.98) 100%);
+			transition: all 0.4s ease;
+			transform: translateY(-10px) scale(1.02);
+			box-shadow: 0 16px 48px 0 rgba(0, 0, 0, 0.3);
+			border-color: rgba(134, 134, 134, 0.4);
 		}
 		h1 {
 			height: 12%;
-			transition: 0.5s;
+			margin-bottom: 15px;
+			transition: all 0.3s ease;
 			font-family: "Aclonica";
+			color: white;
+			font-size: 2rem;
+			text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+			letter-spacing: 1px;
+		}
+		:hover h1 {
+			color: var(--tech-color);
+			text-shadow: none;
 		}
 		&__arrange {
 			display: flex;
@@ -60,17 +74,25 @@
 				align-items: center;
 			}
 			&__projectLinkDiv {
-				box-shadow: 0px 0px 60px 0px gray;
-				transition: all 0.2s 0.1s ease-in-out;
+				box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+				transition: all 0.3s ease;
+				border-radius: var(--borderRadius-2);
 				&__imageContainer {
 					border-radius: var(--borderRadius-2);
-					height: 160px;
-					width: 260px;
+					height: 200px;
+					width: 320px;
 					position: relative;
+					overflow: hidden;
+					box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 					img {
 						border-radius: var(--borderRadius-2);
 						width: 100%;
 						height: 100%;
+						object-fit: cover;
+						transition: transform 0.3s ease;
+					}
+					&:hover img {
+						transform: scale(1.05);
 					}
 					&__overlay {
 						width: 100%;
@@ -80,19 +102,19 @@
 						justify-content: center;
 						align-items: center;
 						text-align: center;
-						background-color: rgba(65, 65, 65, 0.313);
+						background-color: rgba(0, 0, 0, 0.75);
 						position: absolute;
 						top: 0;
 						left: 0;
-						transform: scale(0.01);
-						transition: all 0.2s 0.1s ease-in-out;
+						opacity: 0;
+						transition: opacity 0.3s ease;
 						color: rgb(255, 255, 255);
-						visibility: hidden;
+						font-weight: 600;
+						font-size: 1.1rem;
 						border-radius: var(--borderRadius-2);
 					}
-					:hover &__overlay {
-						transform: scale(1);
-						visibility: visible;
+					&:hover &__overlay {
+						opacity: 1;
 					}
 				}
 			}
@@ -100,55 +122,104 @@
 				text-align: center;
 				color: white;
 				font-family: "Merienda";
-				transition: 0.5s;
+				transition: all 0.3s ease;
+				padding: 20px;
+				p {
+					font-size: 1rem;
+					line-height: 1.6;
+					margin-bottom: 15px;
+					text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+				}
+				ul {
+					list-style: none;
+					padding: 15px 0;
+					li {
+						padding: 5px 0;
+						font-weight: 600;
+						text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+					}
+				}
 				&__toolsBtn {
-					border-radius: var(--borderRadius);
-					padding: 5px;
-					font-size: 9px;
+					border-radius: 8px;
+					padding: 8px 16px;
+					font-size: 0.85rem;
 					margin-left: 13px;
-					color: black;
-					border: transparent;
-					:hover {
-						color: black;
+					color: white;
+					background: rgba(0, 0, 0, 0.3);
+					border: 1px solid rgba(255, 255, 255, 0.3);
+					cursor: pointer;
+					transition: all 0.3s ease;
+					font-weight: 600;
+					text-transform: uppercase;
+					letter-spacing: 0.5px;
+					&:hover {
+						background: rgba(255, 255, 255, 0.2);
+						color: white;
+						transform: translateY(-2px);
 					}
 				}
 				&__projectBtn {
-					border-radius: 6px;
-					border: 1px;
+					border-radius: 10px;
+					border: none;
 					width: fit-content;
 					height: fit-content;
-					padding: 10px;
+					padding: 12px 24px;
 					background-color: #ffffff;
 					margin-top: 24px;
-					transition: 0.5s;
+					transition: all 0.3s ease;
+					box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+					cursor: pointer;
 					&__githubLink {
 						text-decoration: none;
-						transition: 0.5s;
+						transition: all 0.3s ease;
 						color: black;
+						font-weight: 700;
+						text-transform: uppercase;
+						letter-spacing: 1px;
+						font-size: 0.9rem;
 					}
-					:hover {
+					&:hover {
 						background-color: black;
-						transition: 0.5s;
-						&__githubLink {
-							color: var(--white);
-						}
+						transform: translateY(-3px);
+						box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+					}
+					&:hover &__githubLink {
+						color: white;
 					}
 				}
 			}
 		}
-		:hover &__projectDescription {
-			color: black;
-			transition: 0.5s;
+		:hover &__arrange__projectDescription {
+			color: #333;
+			p {
+				text-shadow: none;
+				color: #444;
+			}
+			ul li {
+				text-shadow: none;
+				color: #555;
+			}
+			&__toolsBtn {
+				color: black;
+				background: rgba(134, 134, 134, 0.2);
+				border-color: rgba(134, 134, 134, 0.4);
+				&:hover {
+					background: rgba(134, 134, 134, 0.3);
+					color: black;
+				}
+			}
+			&__projectBtn {
+				background-color: var(--tech-color);
+				&__githubLink {
+					color: white;
+				}
+				&:hover {
+					background-color: black;
+				}
+			}
 		}
-		:hover &__projectBtn {
-			background-color: rgba(69, 81, 81, 0.291);
-			transition: 0.5s;
-		}
-		:hover &__projectBtn a {
-			color: var(--white);
-		}
-		:hover &__projectLink {
-			box-shadow: 0px 0px 27px 3px gray;
+		:hover &__arrange__projectLinkDiv {
+			box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 		}
 	}
 }

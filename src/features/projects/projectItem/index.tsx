@@ -3,7 +3,19 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import styles from "./styles.module.scss";
 
-const ProjectItem = ({
+interface ProjectItemProps {
+	projectId: number;
+	projectImage: string;
+	projectLink: string;
+	projectName: string;
+	projectDescription: string;
+	githubLink: string;
+	projectTools: string[];
+	projectClicked?: number;
+	setProjectClicked: (id: number) => void;
+}
+
+const ProjectItem: React.FC<ProjectItemProps> = ({
 	projectId,
 	projectImage,
 	projectLink,

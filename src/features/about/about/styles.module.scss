@@ -1,27 +1,69 @@
+.logo {
+	font-family: "aclonica";
+	position: absolute;
+	z-index: 3;
+	top: 22px;
+	font-size: 30px;
+	font-weight: 900;
+	left: 10px;
+	color: white;
+	text-decoration: none;
+}
+
+.navigation {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	width: 45%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	height: 29px;
+	z-index: 3;
+	a {
+		text-decoration: none;
+		color: white;
+		font-family: "Bowlby One";
+		&:hover {
+			border-bottom: 4px solid #d50200;
+			transition: 0.2s;
+		}
+	}
+}
+
 .about {
+	position: absolute;
+	top: 80px;
+	left: 0;
+	right: 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #4b4a54;
 	font-family: "Courier New", Courier, monospace;
-	&__btn{
-		display: flex;
-		justify-content: space-between;
-		width: 90%;
-		transition: 0.5s;
-	}
+	padding: 20px;
+	z-index: 2;
 	&__intro {
 		transition: 0.5s;
-		color: black;
+		color: white;
 		height: 400px;
 		display: flex;
 		align-items: center;
 		text-align: center;
 		margin-bottom: 20px;
 		width: 90%;
+		font-size: 1.5rem;
 		:hover {
-			color: #fff3fa;
+			color: #d50200;
 			transition: 1.5s;
 		}
+	}
+}
+
+@media(max-width: 768px){
+	.logo{
+		display: none;
+	}
+	.navigation {
+		display: none;
 	}
 }

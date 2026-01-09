@@ -1,14 +1,14 @@
 import { ProjectUI } from "features";
-import React from "react";
+import React, { useState } from "react";
 
 const Project = () => {
+	const [projectClicked, setProjectClicked] = useState<number | undefined>(undefined);
+	
 	return (
 		<div>
 			<ProjectUI
-				projectClicked={undefined}
-				setProjectClicked={() => {
-					console.log("clicked");
-				}}
+				projectClicked={projectClicked}
+				setProjectClicked={setProjectClicked}
 			/>
 		</div>
 	);

@@ -1,17 +1,21 @@
 .layout {
-	// min-height: 100vh;
-	height: 250vh;
+	min-height: 100vh;
+	height: 100%;
 	display: flex;
+	position: relative;
 
 	&__sides {
 		width: 50%;
 		height: 100%;
+		position: fixed;
 	}
 	&__blackSide {
 		background-color: var(--tech-color);
+		left: 0;
 	}
 	&__whiteSide {
 		background-color: white;
+		right: 0;
 	}
 }
 .glass {

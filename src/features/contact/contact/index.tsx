@@ -2,6 +2,7 @@ import emailjs from "emailjs-com";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Socials } from "../socials";
+import { LayoutUI } from "components/layout";
 import styles from "./styles.module.scss";
 
 const ContactUI = () => {
@@ -24,17 +25,18 @@ const ContactUI = () => {
 		setInput({ name: "", mail: "", textArea: "" });
 	};
 	return (
-		<div className={styles.container}>
-			<div className={styles.contactMoreBtn}>
-				<Link to="/" className={`btn ${styles.btn}`}>
-					Home
-				</Link>
-
-				<h1 className={styles.touch}>Get In Touch</h1>
-				<Link to="/projects" className={`btn ${styles.btn}`}>
-					Projects
-				</Link>
+		<LayoutUI>
+			<Link to="/" className={styles.logo}>
+				Kelvin
+			</Link>
+			<div className={styles.navigation}>
+				<Link to="/">Home</Link>
+				<Link to="/about">About</Link>
+				<Link to="/projects">Projects</Link>
+				<Link to="/certifications">Certifications</Link>
 			</div>
+			<div className={styles.container}>
+				<h1 className={styles.touch}>Get In Touch</h1>
 
 			<p className={styles.connect}>
 				If you have any questions or need help; please fill out the form below.
@@ -79,16 +81,9 @@ const ContactUI = () => {
 					/>
 				</div>
 			</form>
-			<div className={styles.contactMoreBtn}>
-				<Link to="/about" className={`btn ${styles.btn}`}>
-					About
-				</Link>
-				<Socials />
-				<Link to="/certifications" className={`btn ${styles.btn}`}>
-					Certificates
-				</Link>
+			<Socials />
 			</div>
-		</div>
+		</LayoutUI>
 	);
 };
 

@@ -5,7 +5,7 @@ const Resume = () => {
 		<div className={styles.resume}>
 			<section className={styles.resumeDiv}>
 				<a
-					href="https://drive.google.com/file/d/1AbWiZ9DQjFekQFy9BZaJJvsBHcuig1l4/view?usp=drive_link"
+					href="https://drive.google.com/file/d/1zxCm34eHcvD8j0rxYCusbjHop3NnDhv5/view?usp=sharing"
 					target="_blank"
 					rel="noreferrer"
 				>
