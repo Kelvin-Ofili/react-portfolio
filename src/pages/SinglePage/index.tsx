@@ -80,10 +80,10 @@ const SinglePage = () => {
 				<div className={styles.heroContent}>
 					<div className={styles.heroLeft}>
 						<h1>SOFTWARE</h1>
-						<h1>LIVING IN</h1>
+						<h1>ENGINEER</h1>
 					</div>
 					<div className={styles.heroRight}>
-						<h1>ENGINEER</h1>
+						<h1>LIVING IN</h1>
 						<div className={styles.location}>
 							<h4>LAGOS,</h4>
 							<h4>NIGERIA.</h4>
